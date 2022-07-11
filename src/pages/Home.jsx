@@ -44,6 +44,7 @@ export const Home = () => {
                 commentsCount={3}
                 tags={obj.tags}
                 isEditable={userData?._id === obj.user._id}
+                key={obj._id}
               />
             ),
           )}

@@ -7,7 +7,6 @@ import Button from '@mui/material/Button';
 import SimpleMDE from 'react-simplemde-editor';
 
 import 'easymde/dist/easymde.min.css';
-import { selectIsAuth } from '../../redux/slices/auth';
 import axios from '../../axios';
 import styles from './AddPost.module.scss';
 
@@ -116,11 +115,7 @@ export const AddPost = () => {
           <Button variant="contained" color="error" onClick={onClickRemoveImage}>
             Удалить
           </Button>
-          <img
-            className={styles.image}
-            src={`http://localhost:3333${data.imageUrl}`}
-            alt="Uploaded"
-          />
+          <img className={styles.image} src={`http://localhost:3333${imageUrl}`} alt="Uploaded" />
         </>
       )}
       <br />

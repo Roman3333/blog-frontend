@@ -62,7 +62,7 @@ export const FullPost = () => {
           },
         ]}
         isLoading={false}>
-        <Index />
+        <Index avatar={data.user.avatarUrl} />
       </CommentsBlock>
     </>
   );
